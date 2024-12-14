@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- My stylesheet-->
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+  <!-- Font Awesome-->
+  <script src="https://kit.fontawesome.com/08a6076b2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-main">
+
+    
+      <!-- Navigation -->
+      <nav id="navbar-main" class="navbar navbar-dark bg-dark px-3 fixed-top">
+        <a id="homeName" class="navbar-brand" href="#home">Josh Fitzgerald</a>
+        
+        <ul class="nav nav-pills">  
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Grades">Grades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Work Experience">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactMe">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+
+      <br><br><br>
+
+    <div>
+      <div data-spy="scroll" data-target="#navbar-main" data-offset="0">
+          <section id="home" class="topics rounded">
+              <div class="introPage">
+                  <div>
+                      <img class="rounded-circle mx-auto d-block border border-2 border-black" src="images/DogInSuit.jpg" width="250" height="250" alt="Gym family"/>
+                  </div>
+                  <br>
+                  <div class="rounded" id="aboutMeTextbox">  
+                    <h1>Josh Fitzgerald</h1>  
+                    <p>Software Developer</p>
+                    <p>Technology University Dublin Student</p>
+                    <div>
+                      <a class="btn btn-primary" href="images/Joshua Fitzgerald - CV.docx" download>CV</a>
+                      
+                      <button class="btn btn-primary" type="button" onclick="redirectLinkedIn()">LinkedIn</button>
+
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Email Me</button>
+                      
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark" id="exampleModalLabel">New message</h5>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label for="recipient-name" class="col-form-label text-dark">Subject:</label>
+                                  <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="message-text" class="col-form-label text-dark">Message:</label>
+                                  <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" onclick="sendMessage()">Send message</button>
+                              <div id="successEmail" style="display: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                  </symbol>
+                                </svg>
+                                <div class="alert alert-success alert-dismissible fade show d-flex align-items-center" role="alert">
+                                  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                                  <div>
+                                    <h4 class="alert-heading">Email sent!</h4>
+                                    <p>We will be in touch shortly</p>
+                                  </div>
+                                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                              </div> <!--End of alert-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>  
+                    </div>
+                    <br>
+                  </div>
+              </div> <!-- close of row-->
+          </section>
+          <br><br><br><br><br><br>
+          <div class="aboutMe rounded">
+            <section id="aboutMe">
+              <h4>About Me</h4>
+                    
+                <div class="row">
+                  <div class="col-4">
+                    <img class="float-right img-fluid rounded" src="images/DogWork.jpg" width="600" height="400"/>
+                  </div>
+          
+                  <div class="col-8" id="aboutUsTextbox">
+                    <div class="row">
+                      <ul>
+                        <br>
+                        <li>
+                            I am an aspiring Software Developer that was born and raised in Ireland. 
+                            I started my coding journey in Secondary School where I took part in a Computer Science 
+                            module which taught me the basics of Python, block based coding systems such as Scratch 
+                            and how Microbits work. I found this very interesting and decided to further my education 
+                            through applying to study in Technology University Dublin where I am learning about the greater world of coding.
+                        </li>
+                        <br>
+                        <li>
+                          My favourite coding language to use is currently Python as I am fond of its simplicity and ability to work with practically anything. 
+                          C++ comes in at second as due to being unmanaged it is one of the most unique coding languages I have ever worked with.
+                        </li>
+                        <br>
+                        <li>
+                          The type of project I am the most experienced in is Web Applications as I have used Django in most projects ever since I was introduced to it in 2nd Year.
+                        </li>
+                    </ul>
+                      </ul>
+                    </div>
+                  </div> <!-- close of col-->
+                </div> <!-- close of row-->
+              </section>
+            <br><br><br><br><br><br><br>
+
+            <section id="Education">
+              <h4>Education</h4>
+              <p>
+                <div class="col-8" id="aboutUsTextbox">
+                  <div class="row">
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            College
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show bg-dark text-white" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <img src="images/tud.jpg" class="card-img-top" alt="College" height="300">
+                            <h3>Technology University Dublin</h3>
+                              <p>
+                                My education in TUD encompassed a 4 year course in the Computing Program where I am to complete several modules per semester. 
+                                These modules would then be graded and a GPA provided to access a student's performance with the minimum to pass a year being a GPA of 2.0 and a pass in all modules.
+                                I am currently in the middle of my 4th year in TUD without any fails to my name which shows me dedication to get a task done efficiently and effectively.
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Secondary School
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse bg-dark text-white" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <img src="images/adamstown.jpg" class="card-img-top" alt="Secondary" height="300">
+                            <h3>Adamstown Community College</h3>
+                            <p>
+                              In Adamstown, Students were divided up into 6 years. 1st - 3rd Year were the Juniors and 4th - 6th year were the seniors. 
+                              The Junior part of the course is a preperation for the Leaving Cert as it has the students prepare for the Junior Cert which acts as an example as to what the Leaving Cert will be like.
+                              The 4th year of the course is an optional year and focuses and developing the students life skills such as planning out routes, cooking, building, etc.
+                              The 5th and 6th years have the students properly do their Leaving Cert which they can use to decide which college to go to if they wish to do so.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Primary School
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse bg-dark text-white" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <img src="images/griffeen-valley-educate-together-ns-rollnumber-20166W.jpg" class="card-img-top" alt="Primary" height="300">
+                            <h3>Griffeen Valley Educate Together</h3>
+                            <p>
+                              Griffeen Valley's system revolves around teaching the fundamentals of an academic course to young students who are ripe with potential. The system works on an 8 year progress starting with Junior Infants which is where infant students learn.
+                              They then become Senior infants a year later and steadily progress as the years go on. There is no real fear of being held back a year as the course is very lenient in how it approaches its grading system.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- close of col-->
+              </p>
+            </section>
+
+            <br><br><br><br><br><br><br>
+
+            <section id="Grades">
+              <h4>Grades</h4>
+              <h6>College Grades:</h6>
+              <div class="flex-container">
+                <div class="nav nav-tabs" role="tablist">
+              
+                  <a class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one" type="button" role="tab" aria-controls="nav-one" aria-selected="true">4th Year</a>
+                  <a class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two" type="button" role="tab" aria-controls="nav-two" aria-selected="false">3rd Year</a>
+                  <a class="nav-link" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" role="tab" type="button" aria-controls="nav-three" aria-selected="false">2nd Year</a>
+                  <a class="nav-link" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" role="tab" type="button" aria-controls="nav-four" aria-selected="false">1st Year</a>
+                </div>
+              </div>
+              
+              <div id="content-wrap">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab" tabindex="0">
+                    <p>
+                      <div class="row">
+                        <div class="col-5">
+                          <ul class="list-inline">
+                            <li>GPA: </li>
+                            <l1>4th Year Project:</l1>
+                            <li>Media Design:</li>
+                            <li>Information Management:</li>
+                            <li>Enterprise Performance Architecture:</li>
+                            <li>Machine Learning:</li>
+                            <li>Enterprise App Development:</li>
+                          </ul>
+                          </div>
+                          <div class="col-6">
+                            <ul class="list-inline ">
+                              <li>3.22</li>
+                              <li>TBC</li>
+                              <li>B</li>
+                              <li>C+</li>
+                              <li>B+</li>
+                              <li>A</li>
+                              <li>C</li>
+                            </ul>
+                            </div>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab" tabindex="0">
+                    <p>
+                      <div class="row">
+                        <div class="col-5">
+                          <ul class="list-inline ">
+                            <li>GPA: </li>
+                            <li>Experimental Learning:</li>
+                            <li>Server-Side Web Development:</li>
+                            <li>Operating Systems:</li>
+                            <li>Cloud Service & Distrib Comp:</li>
+                            <li>Big Data Technologies:</li>
+                            <li>Data Structures & Algorithms:</li>
+                            <li>Data Analysis:</li>
+                          </ul>
+                          </div>
+                          <div class="col-6">
+                            <ul class="list-inline ">
+                              <li>3.12</li>
+                              <li>PASS</li>
+                              <li>C+</li>
+                              <li>B+</li>
+                              <li>A</li>
+                              <li>C</li>
+                              <li>B</li>
+                              <li>C+</li>
+                            </ul>
+                            </div>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab" tabindex="0">
+                    <p>
+                      <div class="row">
+                        <div class="col-5">
+                          <ul class="list-inline ">
+                            <li>GPA: </li>
+                            <li>Routing & Switching Ess:</li>
+                            <li>Discrete Mathematics 2:</li>
+                            <li>2nd Year Project:</li>
+                            <li>Management Science:</li>
+                            <li>Database Admin & Analysis:</li>
+                            <li>Software Development 3:</li>
+                            <li>Information Security:</li>
+                            <li>Advanced Database Technology:</li>
+                            <li>Network Fundementals:</li>
+                            <li>Software Qual Ass & Testing:</li>
+                            <li>Client side Web Development:</li>
+                            <li>Software Development 4:</li>
+                          </ul>
+                          </div>
+                          <div class="col-6">
+                            <ul class="list-inline ">
+                              <li>3.27</li>
+                              <li>B</li>
+                              <li>C+</li>
+                              <li>B+</li>
+                              <li>A</li>
+                              <li>C</li>
+                              <li>B</li>
+                              <li>C+</li>
+                              <li>B+</li>
+                              <li>A</li>
+                              <li>C</li>
+                              <li>B</li>
+                              <li>C+</li>
+                            </ul>
+                            </div>
+                      </div>
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab" tabindex="0">
+                    <p>
+                      <div class="row">
+                        <div class="col-5">
+                          <ul class="list-inline ">
+                            <li>GPA: </li>
+                            <li>Critical Skills Development:</li>
+                            <li>Discrete Mathematics 1:</li>
+                            <li>Business & Information Sys:</li>
+                            <li>Visual Design & User Exp:</li>
+                            <li>Computer Architecture:</li>
+                            <li>Software Development 1:</li>
+                            <li>Operating Syst Fundamentals:</li>
+                            <li>Database Fundamentals:</li>
+                            <li>Statistics:</li>
+                            <li>Social Media Communications:</li>
+                            <li>Systems Analysis:</li>
+                            <li>Software Development 2:</li>
+                          </ul>
+                          </div>
+                          <div class="col-6">
+                            <ul class="list-inline ">
+                              <li>3.02</li>
+                              <li>B</li>
+                              <li>C+</li>
+                              <li>B+</li>
+                              <li>A</li>
+                              <li>C</li>
+                              <li>B</li>
+                              <li>C+</li>
+                              <li>B+</li>
+                              <li>A</li>
+                              <li>C</li>
+                              <li>B</li>
+                              <li>C+</li>
+                            </ul>
+                            </div>
+                      </div>
+                    </p>
+                  </div>
+              
+                </div>
+              </div>
+            
+            </section>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+
+            <section id="Projects">
+              <h4>Projects</h4>
+              <p>
+                
+              </p>
+
+              <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card h-100 individualCard bg-dark text-white">
+                    <div class="card-header">HSE Project</div>
+                    <img src="images/HSE-Logo-Symbol_Full-Colour-1024x914_1.jpg" class="card-img-top" alt="Primary" height="300">
+                    <div class="card-body">
+                      <h5 class="card-title">Calender App</h5>
+                    </div>
+                    <div class="card-footer" >
+                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal2">
+                        Details
+                      </button>
+                      <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="modal2Label">HSE Project</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <h3>Calender App</h3>
+                                    <p class="text-dark">
+                                      In my On-Campus Internship, I was tasked with completing a project provided by the HSE corporation alongside 2 teammates. 
+                                      The problem we were given was to solve people not going to the hospital or taking their medication.
+                                      Our solution to this was a calender application that would send out reminders to the user about their hospital appointments and other medical needs.
+                                      We found this solution as we realised that while we cannot force someone to do these things we can remind them as people forgetting to do so is one of the most common ways for them to not do it.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 studentCard bg-dark text-white">
+                    <div class="card-header">4th Year Project</div>
+                    <img src="images/ai.png" class="card-img-top" alt="Secondary" height="300">
+                    <div class="card-body">
+                      <h5 class="card-title">Digital Assitant</h5>
+                    </div>
+                    <div class="card-footer">
+                      
+                      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal3">
+                        Details
+                      </button>
+
+                      <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="modal2Label">4th Year Project</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <h3>Digital Assitant</h3>
+                                    <p class="text-dark">
+                                      My 4th Year Project is based around the idea of having a little Assitant that helps you in various ways.
+                                      These various ways include an AI application that can answer the question of users.
+                                      A calender application that allows the user to set times for appointments with staff or deadlines.
+                                      A notes application where the user can place notes for themselves for their own use.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 coupleCard bg-dark text-white">
+                    <div class="card-header">2nd Year Project</div>
+                    <img src="images/toy.png" class="card-img-top" alt="College" height="300">
+                    <div class="card-body">
+                      <h5 class="card-title">Toy Store Website</h5>
+                    </div>
+                    <div class="card-footer">
+                      <div>
+                        
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal4">
+                          Details
+                        </button>
+  
+  
+                        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title text-dark" id="modal2Label">2nd Year Project</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body text-dark">
+                                      <h3>Toy Store Website</h3>
+                                      <p class="text-dark">
+                                        In the 2nd Year Project I was given a group assignment where I was to develop a web application of my choosing. 
+                                        My teammates did not mind what we did so I chose a Toy Store Application based on one of my hobbies of figure collecting.
+                                        The application was done in 3 iterations and comprised of various methods that allowed us to list off products, display them, have a stock of them and change said stock when something was bought.
+                                      </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <br><br><br><br><br><br><br><br><br><br>
+            
+            <section id="Work Experience">
+              <h4>Work Experience</h4>
+              <p>
+                
+              </p>
+              <div class="row">
+                <div class="col-6">
+                  <!-- Basic Carousel with Controls -->
+                  <div id="trainersCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#trainersCarousel" data-bs-slide-to="0" class="active"></li>
+                      <li data-bs-target="#trainersCarousel" data-bs-slide-to="1"></li>
+                    </ol>
+        
+                    <!-- Images -->
+                    <div class="carousel-inner">
+                    
+                      <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/TUD.png" class="d-block w-150 rounded" height="500" alt="TUD">
+                        <!-- Captions-->
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                    
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/UTS_logo_blue-e1718485461434.png" class="d-block w-100 rounded" height="500" alt="Fidelma">
+                        <!-- Captions-->
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                    </div>
+        
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#trainersCarousel" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+        
+                    <a class="carousel-control-next" href="#trainersCarousel" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                  </div> <!-- Close div for carousel-->
+                </div><!-- Close div for col-->
+
+                <div class="col-6">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#TUD" type="button" role="tab" aria-controls="home" aria-selected="true">TUD</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">UTS Technologies</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="TUD" role="tabpanel" aria-labelledby="home-tab">
+                      <div class="row">
+                        <h4 class="text-white">On-Campus Internship</h4>
+                        <button class="btn btn-primary" type="button" onclick="redirectTUD()">Website</button>
+                      </div>
+                      <p>
+                      In this internship, I was to work on a HSE project that was to complete the task of creating an application that was to help
+                      get paitents to come into the hospital. Alongside that I was required to take part in numerous Certification Programs from various companies
+                      such as AWS, Redhat, etc. At the end of all of these I was then judged on my performance and given a PASS or FAIL grade depending on how well I did
+                      which by my progression to 4th year means I was given a PASS.
+                      </p>
+                      
+                    </div>
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      <div class="row">
+                        <h4 class="text-white">Inventory Clerk</h4>
+                        <button class="btn btn-primary" type="button" onclick="redirectUTS()">Website</button>
+                      </div>
+                      <p>
+                        My UTS Technologies work experience was one that was apart of my 4th Year at Adamstown. UTS Technologies is a company that
+                        has been leading the Ireland parking system for over 50 years. During my time there my responsibities were to manage the company's item stock
+                        which I did by manually counting and noting every item parts then updating them on the company's database. I was also responsible for sorting the
+                        the company's documents which I was told to order in any way I see fit so I ordered them by date from earliest to latest. After my first time at UTS
+                        I was invited to come back in my 2nd round of work experience after being paid where I was given the same responsibities as before.
+                      </p>
+                    </div>
+                    </div>
+                  </div>
+                  
+              </div> <!-- Close div for row-->
+        
+              <br><br>
+            </section>
+
+            <br><br><br><br><br><br><br><br><br>
+            
+            <section id="Hobbies">
+              <h4>Hobbies</h4>
+              <p>
+                <ul>
+                  <li>
+                    Video Games:
+                    <p>
+                      My main hobby is playing Video Games. I am always excited to play games I am interested in as they provide such an experience
+                      that nothing else can give. The simple immersion of taking control of a character and setting out on an adventure as if you were
+                      the one in a TV show is just simply unmatched. My favourite game is Xenoblade Chronicles as that game resonated with me on a very
+                      personal level.
+                    </p>
+                  </li>
+                  <li>
+                    Coding:
+                    <p>
+                      As expected, coding is a hobby I quite enjoy as I like to code on various websites (name Fandom websites) as I enjoy watching my work come together.
+                      This carries over to my main work as went I'm putting in my elbow grease into a project and seeing the fruits of my labour I cannot help but be
+                      immencely satisfied by the results.
+                    </p>
+                  </li>
+                  <li>
+                    Collecting:
+                    <p>
+                      Collecting is a close hobby to me as for years I wanted to collecting something as I felt having the hobby would be mentally healthy.
+                      During the pandemic I was able to get into collecting Transformers figures after feeling a wave of nostalgia of seeing some of my old figures
+                      that I got when I was a child. I feel a massive sense of joy when I fidget with a figure, posing it into numerous dynamic stances as I display them
+                      in my own room.
+                    </p>
+                  </li>
+                </ul>
+              </p>
+            </section>
+
+            <br><br><br><br><br>
+            
+        </div>
+        
+    </div>
+  <br><br><br><br><br><br><br><br>
+  <div class="ContactMe">
+          <section id="contactMe">
+            <h4>Contact Me</h4>
+            
+            <p>I would love to hear from you. Use the contact details below to get in touch..</p><br>
+
+            <div class="row">
+              <!--Our Contact Details-->
+              <div class="col-4">
+                <h5>My contact details</h5>
+                <br>
+                <div>
+                  <ul class="list-group">
+                    <li class="list-group-item contactInfo" aria-current="true">Location</li>
+                    <li class="list-group-item"><i class="fa-solid fa-location-dot" style="color: black;"></i>  Lucan, Co. Dublin</li>
+                  </ul>
+                  <br><br>
+                  <ul class="list-group">
+                    <li class="list-group-item contactInfo" aria-current="true">Email</li>
+                    <li class="list-group-item bg"><i class="fa-solid fa-envelope" style="color: black;"></i>  x00188120@mytudublin.ie</li>
+                  </ul>
+                  <br><br>
+                  <ul class="list-group">
+                    <li class="list-group-item contactInfo" aria-current="true">Phone Number</li>
+                    <li class="list-group-item"><i class="fa-solid fa-phone" style="color: black;"></i>  085 195 7559</li>
+                  </ul>
+                </div>
+              </div> <!-- End of col -->
+
+              <!-- Form-->
+              <div class="col-4">
+                <h5>Send me a message</h5>
+                <br>
+                <form class="d-grid gap-3">
+                  <div class="form-group ">
+                    <label for="emailAddressInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailAddressInput" placeholder="name@example.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="categoryInput" class="form-label">Category of Inquiry</label>
+                    <select class="form-control" id="categoryInput" required>
+                      <option class="text-dark" selected disabled value="">Choose...</option>
+                      <option class="text-dark">Job Offers</option>
+                      <option class="text-dark">General Assistance</option>
+                      <option class="text-dark">Commissions</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumberInput" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control text-dark" id="phoneNumberInput" placeholder="087 - 5 digits" required pattern="[0-9]{5}">
+                  </div>
+                  <div class="form-group">
+                    <label for="messageInput" class="form-label">Type your message here</label>
+                    <textarea class="form-control" id="messageInput" rows="3" placeholder="Type your message here" required></textarea>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="button" onclick="confirm()">Submit form</button>
+                  </div>
+                </form>
+                <br>
+                <!-- Alert success after clicking submit-->
+              </div> <!--End of col-->
+
+              <div class="col-4">
+                <h5>Find us on Google Maps</h5>
+                <br>
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <iframe
+                  width="600"
+                  height="450"
+                  style="border:0"
+                  loading="lazy"
+                  allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDgAPlJ7lySKOolYMBJfZp-kziLjQaqCWE
+                    &q=Space+Needle,Seattle+WA">
+              </iframe>
+              </div>
+            </div> <!-- End of row-->
+          </section>
+          
+      </div>
+    <!-- Bootstrap JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- My JavaScript file -->
+    <script src="scripts/myScripts.js"></script> 
+</body>
+</html>

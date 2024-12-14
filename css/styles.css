@@ -1,0 +1,83 @@
+* {
+    font-family: 'Times New Roman';
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body {
+    background-color: rgb(18, 18, 18) !important;
+    
+}
+
+.nav {
+    color: antiquewhite;
+}
+
+
+
+.nav-link {
+    color: antiquewhite !important;
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.container {
+    background-image: URL(https://alumni.mcmaster.ca/s/1439/images/editor/qotw/2021/sun_5.jpg);
+}
+
+#aboutMeTextbox {
+    text-align: center;
+}
+
+#AboutMeFlex {
+    align-items: center;
+}
+
+.topics {
+    margin: 0.05rem;
+    padding: 2rem;
+    text-align: justify;
+    
+  }
+
+.aboutMe {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 90%;
+    align-self: center;
+    text-align: justify;
+    background-color: rgb(41, 41, 41);;
+}
+
+.accordion-button::before {
+    color: red !important;
+}
+
+.ContactMe {
+    position: absolute;
+    width: 100%;
+    margin: 0.05rem;
+    left: 0;
+    padding: 2rem;
+    background-color: rgb(41, 41, 41);
+}
+
+.introPage {
+    padding: 4rem;
+    background-image: URL(https://alumni.mcmaster.ca/s/1439/images/editor/qotw/2021/sun_5.jpg);
+}
+
+.contactInfo {
+    color: white !important;
+    background-color: rgb(41, 41, 41) !important;
+}
+
+.active {
+    color: black !important;
+}
